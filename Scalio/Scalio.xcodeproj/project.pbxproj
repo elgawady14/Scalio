@@ -25,6 +25,7 @@
 		4A6E448727C028F1005BB393 /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448627C028F1005BB393 /* ProductsResponse.swift */; };
 		4A6E448927C12CEE005BB393 /* SearchServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448827C12CEE005BB393 /* SearchServices.swift */; };
 		4A6E448D27C12E30005BB393 /* CustomBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448C27C12E30005BB393 /* CustomBinding.swift */; };
+		4A6E449127C14971005BB393 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E449027C14971005BB393 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		4A6E448627C028F1005BB393 /* ProductsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
 		4A6E448827C12CEE005BB393 /* SearchServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchServices.swift; sourceTree = "<group>"; };
 		4A6E448C27C12E30005BB393 /* CustomBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBinding.swift; sourceTree = "<group>"; };
+		4A6E449027C14971005BB393 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				4A6E444627C00668005BB393 /* ScalioApp.swift */,
 				4A6E444827C00668005BB393 /* SearchView.swift */,
+				4A6E449027C14971005BB393 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A6E449127C14971005BB393 /* SearchBar.swift in Sources */,
 				4A6E448727C028F1005BB393 /* ProductsResponse.swift in Sources */,
 				4A6E447D27C00BF4005BB393 /* MarnPOSAPI+TargetType.swift in Sources */,
 				4A6E447C27C00BF4005BB393 /* TargetType.swift in Sources */,

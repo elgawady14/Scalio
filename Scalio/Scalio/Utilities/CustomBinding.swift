@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 final class CustomBinding<T> {
     typealias Listener = (T) -> Void
     var listener: Listener?
@@ -22,5 +23,20 @@ final class CustomBinding<T> {
     func bind(listener: Listener?) {
         self.listener = listener
         listener?(value)
+    }
+}
+
+extension View {
+    func dismissKeyboard() {
+        UIApplication.shared.endEditing()
+    }
+}
+
+import UIKit
+
+// extension for keyboard to dismiss
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
