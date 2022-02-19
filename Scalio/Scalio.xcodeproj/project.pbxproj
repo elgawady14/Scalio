@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4A6E444727C00668005BB393 /* ScalioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E444627C00668005BB393 /* ScalioApp.swift */; };
-		4A6E444927C00668005BB393 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E444827C00668005BB393 /* ContentView.swift */; };
+		4A6E444927C00668005BB393 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E444827C00668005BB393 /* SearchView.swift */; };
 		4A6E444B27C0066A005BB393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6E444A27C0066A005BB393 /* Assets.xcassets */; };
 		4A6E444E27C0066A005BB393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6E444D27C0066A005BB393 /* Preview Assets.xcassets */; };
 		4A6E445827C0066A005BB393 /* ScalioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E445727C0066A005BB393 /* ScalioTests.swift */; };
 		4A6E446227C0066A005BB393 /* ScalioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E446127C0066A005BB393 /* ScalioUITests.swift */; };
 		4A6E446427C0066A005BB393 /* ScalioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E446327C0066A005BB393 /* ScalioUITestsLaunchTests.swift */; };
+		4A6E447927C00BF4005BB393 /* ScalioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447427C00BF4005BB393 /* ScalioAPI.swift */; };
+		4A6E447A27C00BF4005BB393 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447527C00BF4005BB393 /* NetworkConstants.swift */; };
+		4A6E447B27C00BF4005BB393 /* ScalioProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447627C00BF4005BB393 /* ScalioProvider.swift */; };
+		4A6E447C27C00BF4005BB393 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447727C00BF4005BB393 /* TargetType.swift */; };
+		4A6E447D27C00BF4005BB393 /* MarnPOSAPI+TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447827C00BF4005BB393 /* MarnPOSAPI+TargetType.swift */; };
+		4A6E448027C0234D005BB393 /* ScalioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447F27C0234C005BB393 /* ScalioError.swift */; };
+		4A6E448327C025CE005BB393 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448227C025CE005BB393 /* TestConstants.swift */; };
+		4A6E448427C02613005BB393 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448227C025CE005BB393 /* TestConstants.swift */; };
+		4A6E448727C028F1005BB393 /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448627C028F1005BB393 /* ProductsResponse.swift */; };
+		4A6E448927C12CEE005BB393 /* SearchServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448827C12CEE005BB393 /* SearchServices.swift */; };
+		4A6E448D27C12E30005BB393 /* CustomBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E448C27C12E30005BB393 /* CustomBinding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,7 @@
 /* Begin PBXFileReference section */
 		4A6E444327C00668005BB393 /* Scalio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scalio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6E444627C00668005BB393 /* ScalioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioApp.swift; sourceTree = "<group>"; };
-		4A6E444827C00668005BB393 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A6E444827C00668005BB393 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4A6E444A27C0066A005BB393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6E444D27C0066A005BB393 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A6E445327C0066A005BB393 /* ScalioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,17 @@
 		4A6E445D27C0066A005BB393 /* ScalioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6E446127C0066A005BB393 /* ScalioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioUITests.swift; sourceTree = "<group>"; };
 		4A6E446327C0066A005BB393 /* ScalioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A6E447427C00BF4005BB393 /* ScalioAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalioAPI.swift; sourceTree = "<group>"; };
+		4A6E447527C00BF4005BB393 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		4A6E447627C00BF4005BB393 /* ScalioProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalioProvider.swift; sourceTree = "<group>"; };
+		4A6E447727C00BF4005BB393 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		4A6E447827C00BF4005BB393 /* MarnPOSAPI+TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarnPOSAPI+TargetType.swift"; sourceTree = "<group>"; };
+		4A6E447E27C011F9005BB393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4A6E447F27C0234C005BB393 /* ScalioError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalioError.swift; sourceTree = "<group>"; };
+		4A6E448227C025CE005BB393 /* TestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		4A6E448627C028F1005BB393 /* ProductsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
+		4A6E448827C12CEE005BB393 /* SearchServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchServices.swift; sourceTree = "<group>"; };
+		4A6E448C27C12E30005BB393 /* CustomBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBinding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +116,10 @@
 		4A6E444527C00668005BB393 /* Scalio */ = {
 			isa = PBXGroup;
 			children = (
-				4A6E444627C00668005BB393 /* ScalioApp.swift */,
-				4A6E444827C00668005BB393 /* ContentView.swift */,
+				4A6E448A27C12DB2005BB393 /* Views */,
+				4A6E447027C009A1005BB393 /* Networking */,
+				4A6E448B27C12DBE005BB393 /* Utilities */,
+				4A6E447E27C011F9005BB393 /* Info.plist */,
 				4A6E444A27C0066A005BB393 /* Assets.xcassets */,
 				4A6E444C27C0066A005BB393 /* Preview Content */,
 			);
@@ -113,6 +137,7 @@
 		4A6E445627C0066A005BB393 /* ScalioTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A6E448127C025C1005BB393 /* Helpers */,
 				4A6E445727C0066A005BB393 /* ScalioTests.swift */,
 			);
 			path = ScalioTests;
@@ -125,6 +150,78 @@
 				4A6E446327C0066A005BB393 /* ScalioUITestsLaunchTests.swift */,
 			);
 			path = ScalioUITests;
+			sourceTree = "<group>";
+		};
+		4A6E447027C009A1005BB393 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E447127C009B7005BB393 /* Base */,
+				4A6E447227C009E4005BB393 /* Services */,
+				4A6E447327C009F2005BB393 /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4A6E447127C009B7005BB393 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E447427C00BF4005BB393 /* ScalioAPI.swift */,
+				4A6E447827C00BF4005BB393 /* MarnPOSAPI+TargetType.swift */,
+				4A6E447627C00BF4005BB393 /* ScalioProvider.swift */,
+				4A6E447527C00BF4005BB393 /* NetworkConstants.swift */,
+				4A6E447727C00BF4005BB393 /* TargetType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4A6E447227C009E4005BB393 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E448827C12CEE005BB393 /* SearchServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4A6E447327C009F2005BB393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E448527C028E2005BB393 /* Responses */,
+				4A6E447F27C0234C005BB393 /* ScalioError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A6E448127C025C1005BB393 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E448227C025CE005BB393 /* TestConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4A6E448527C028E2005BB393 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E448627C028F1005BB393 /* ProductsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		4A6E448A27C12DB2005BB393 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E444627C00668005BB393 /* ScalioApp.swift */,
+				4A6E444827C00668005BB393 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A6E448B27C12DBE005BB393 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E448C27C12E30005BB393 /* CustomBinding.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6E444927C00668005BB393 /* ContentView.swift in Sources */,
+				4A6E448727C028F1005BB393 /* ProductsResponse.swift in Sources */,
+				4A6E447D27C00BF4005BB393 /* MarnPOSAPI+TargetType.swift in Sources */,
+				4A6E447C27C00BF4005BB393 /* TargetType.swift in Sources */,
+				4A6E447A27C00BF4005BB393 /* NetworkConstants.swift in Sources */,
+				4A6E448D27C12E30005BB393 /* CustomBinding.swift in Sources */,
+				4A6E444927C00668005BB393 /* SearchView.swift in Sources */,
+				4A6E448927C12CEE005BB393 /* SearchServices.swift in Sources */,
+				4A6E448427C02613005BB393 /* TestConstants.swift in Sources */,
+				4A6E447B27C00BF4005BB393 /* ScalioProvider.swift in Sources */,
 				4A6E444727C00668005BB393 /* ScalioApp.swift in Sources */,
+				4A6E447927C00BF4005BB393 /* ScalioAPI.swift in Sources */,
+				4A6E448027C0234D005BB393 /* ScalioError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6E445827C0066A005BB393 /* ScalioTests.swift in Sources */,
+				4A6E448327C025CE005BB393 /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,12 +524,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.github.com/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scalio/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DW4MH742S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scalio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MODE = DEBUG;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elgawady14.Scalio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -445,12 +556,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.github.com/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scalio/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DW4MH742S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scalio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +574,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MODE = RELEASE;
 				PRODUCT_BUNDLE_IDENTIFIER = com.elgawady14.Scalio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
