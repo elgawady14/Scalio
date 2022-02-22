@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SearchBar: View {
-    @Binding var text: String
+    @EnvironmentObject var settings: SearchSettings
     @Environment(\.colorScheme) var colorScheme
+    @Binding var text: String
     
     var body: some View {
         VStack {
@@ -18,7 +19,7 @@ struct SearchBar: View {
                 TextField("Search users ...", text: $text)
                     .submitLabel(.search)
                     .onSubmit {
-                        print("hhhh")
+                        settings.viewModel.submitAction()
                     }
                 if text != "" {
                     Image(systemName: "xmark.circle.fill")

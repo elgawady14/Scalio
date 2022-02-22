@@ -11,7 +11,8 @@ import SwiftUI
 struct ScalioApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            SearchView().environmentObject(SearchSettings())
+//            ResultsView().environmentObject(SearchSettings())
         }
     }
 }

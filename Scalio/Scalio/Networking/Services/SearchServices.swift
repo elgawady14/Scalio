@@ -9,9 +9,9 @@ import Foundation
 
 class SearchServices: NSObject {
     
-    class func searchAPI(keyword: String, success: @escaping SuccessCompletion<SearchResponse>, failure: @escaping FailureCompletion) {
+    class func searchAPI(keyword: String, page: Int, perPage: Int, success: @escaping SuccessCompletion<SearchResponse>, failure: @escaping FailureCompletion) {
         
-        ScalioProvider.shared.requestAPI(.search(keyword: keyword), success: { response in
+        ScalioProvider.shared.requestAPI(.search(keyword: keyword, page: page, perPage: perPage), success: { response in
             success(response)
         }) { error in
             failure(error)

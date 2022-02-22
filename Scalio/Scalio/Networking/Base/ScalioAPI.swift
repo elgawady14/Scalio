@@ -9,7 +9,7 @@ import Foundation
 
 // Here's all Scalio APIs
 enum ScalioAPI {
-    case search(keyword: String)
+    case search(keyword: String, page: Int, perPage: Int)
 }
 
 extension ScalioAPI {

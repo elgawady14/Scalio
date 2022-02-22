@@ -25,13 +25,3 @@ struct SearchResponse: Codable {
         case items = "items"
     }
 }
-
-struct Item: Codable {
-    let login, avatarURL, type: String
-
-    enum CodingKeys: String, CodingKey {
-        case login = "login"
-        case avatarURL = "avatar_url"
-        case type = "type"
-    }
-}

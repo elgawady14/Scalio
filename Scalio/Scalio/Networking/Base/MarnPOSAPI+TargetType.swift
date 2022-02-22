@@ -29,8 +29,8 @@ extension ScalioAPI: TargetType {
     // in `MarnPOSAPI` enum with Base Url.
     var path: String {
         switch self {
-        case .search:
-            return "search/users?q=\(percentEncoding!)"
+        case let .search(_, page, perPage):
+            return "search/users?q=\(percentEncoding!)&page=\(page)&perPage=\(perPage)"
         }
     }
     
@@ -62,7 +62,7 @@ extension ScalioAPI: TargetType {
     // Get a percent encoding string version (replacing spaces with %20).
     var percentEncoding: String? {
         switch self {
-        case .search(let keyword):
+        case let .search(keyword, _, _):
             return keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
 
         }
