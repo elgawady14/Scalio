@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// The protocol used to define teh specifications nessary for `MarnPOSProvider`.
+/// The protocol used to define teh specifications nessary for `ScalioProvider`.
 protocol TargetType {
     
     /// The target's base `URL`.
@@ -17,7 +17,7 @@ protocol TargetType {
     var path: String { get }
     
     /// The HTTP method used in the request.
-    var method: MarnPOSHTTPMethod { get }
+    var method: ScalioHTTPMethod { get }
 
     /// The parameters to be used.
     var parameters: Data? { get }
@@ -29,7 +29,7 @@ protocol TargetType {
     var testCaseIdentifier: String { get }
 }
 
-enum MarnPOSHTTPMethod: String {
+enum ScalioHTTPMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"

@@ -12,7 +12,6 @@ struct ScalioApp: App {
     var body: some Scene {
         WindowGroup {
             SearchView().environmentObject(SearchSettings())
-//            ResultsView().environmentObject(SearchSettings())
         }
     }
 }

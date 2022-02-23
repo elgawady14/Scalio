@@ -8,7 +8,7 @@
 import Foundation
 
 class SearchSettings: ObservableObject {
-    @Published var keywordToSearch = "a" {
+    @Published var keywordToSearch = "" {
         didSet {
             viewModel.keywordToSearch.value = keywordToSearch
         }

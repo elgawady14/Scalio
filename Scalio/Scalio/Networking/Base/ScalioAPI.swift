@@ -1,5 +1,5 @@
 //
-//  MarnPOSAPI.swift
+//  ScalioAPI.swift
 //  Scalio
 //
 //  Created by Ahmed Abduljawad on 18/02/2022.
@@ -8,7 +8,7 @@
 import Foundation
 
 // Here's all Scalio APIs
-enum ScalioAPI {
+public enum ScalioAPI {
     case search(keyword: String, page: Int, perPage: Int)
 }
 

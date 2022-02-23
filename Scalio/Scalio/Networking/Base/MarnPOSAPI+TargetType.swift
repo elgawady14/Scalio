@@ -1,5 +1,5 @@
 //
-//  MarnPOSAPI+TargetType.swift
+//  ScalioAPI+TargetType.swift
 //  Scalio
 //
 //  Created by Ahmed Abduljawad on 18/02/2022.
@@ -26,7 +26,7 @@ extension ScalioAPI: TargetType {
     }
     
     // determine resource path for each endpoint
-    // in `MarnPOSAPI` enum with Base Url.
+    // in `ScalioAPI` enum with Base Url.
     var path: String {
         switch self {
         case let .search(_, page, perPage):
@@ -35,7 +35,7 @@ extension ScalioAPI: TargetType {
     }
     
     // HTTP method "GET, POST, PUT ... etc".
-    var method: MarnPOSHTTPMethod {
+    var method: ScalioHTTPMethod {
         switch self {
         case .search:
             return .get
@@ -67,22 +67,13 @@ extension ScalioAPI: TargetType {
 
         }
     }
-    // specify parameters encoding for each endpoint or service.
-    var parameterEncoding: ParameterEncoding {
-        switch method {
-        case .get:
-            return .URLEncoding
-        default:
-            return .JSONEncoding
-        }
-    }
     
     /// Test Case Identifier used in `Postman` mocking server.
     var testCaseIdentifier: String {
         var identifier = ""
         switch self {
         case .search:
-            identifier = "1"
+            identifier = "0"
         }
         let separator = "/"
         return separator + identifier

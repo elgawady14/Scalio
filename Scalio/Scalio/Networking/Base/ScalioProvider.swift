@@ -26,7 +26,7 @@ class ScalioProvider: NSObject {
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadRevalidatingCacheData
         configuration.timeoutIntervalForRequest = request.target.timeoutInterval
-        configuration.httpAdditionalHeaders = filterHttpHeaders(request.target.headers)
+        //configuration.httpAdditionalHeaders = filterHttpHeaders(request.target.headers)
         let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: .current)
         guard let theUrlRequest = request.target.baseURL else { return }
         var urlRequest = theUrlRequest
@@ -93,8 +93,8 @@ extension ScalioProvider {
         return self.connection
     }
     
-    fileprivate func filterHttpHeaders(_ headers: [String:Any]?) -> [String:Any]? {
-        /// For unit testing only send `POSTMAN_API_KEY` http header key-value.
-        return headers?.filter { connection == .real || (connection == .mock && $0.key == TestConstants.POSTMAN_API_KEY) }
-    }
+//    fileprivate func filterHttpHeaders(_ headers: [String:Any]?) -> [String:Any]? {
+//        /// For unit testing only send `POSTMAN_API_KEY` http header key-value.
+//        return headers?.filter { connection == .real || (connection == .mock && $0.key == TestConstants.POSTMAN_API_KEY) }
+//    }
 }

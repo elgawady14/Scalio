@@ -9,22 +9,18 @@ import Foundation
 import SwiftUI
 
 class SearchViewModel: NSObject {
-    var keywordToSearch: CustomBinding<String> = CustomBinding("a")
+    var keywordToSearch: CustomBinding<String> = CustomBinding("")
     var isResultsPresented: CustomBinding<Bool> = CustomBinding(false)
     var isLoading: CustomBinding<Bool> = CustomBinding(false)
     var visibleItems: CustomBinding<[Item]> = CustomBinding([])
     var allItems: [Item] = []
     var totalCount = 0
-    var paginationIndex = 0 {
-        didSet {
-            visibleItems.value = Array(allItems.prefix(through: paginationIndex))
-        }
-    }
     var showMessage: CustomBinding<Bool> = CustomBinding(false)
     var message = ""
     var page = 1
     var perPage = 9
     var isLoadingFirstAPICall = false
+    var run: (() ->Void)?
 
     func submitAction() {
         guard !keywordToSearch.value.isEmpty else { return }
@@ -60,6 +56,15 @@ class SearchViewModel: NSObject {
             self.isLoadingFirstAPICall = false
 
         }
+    }
+    
+    func clearCache() {
+        allItems = []
+        visibleItems.value = []
+        isLoading.value = false
+        totalCount = 0
+        isResultsPresented.value = false
+        page = 1
     }
 }
 

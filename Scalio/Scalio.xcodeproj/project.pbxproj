@@ -13,13 +13,14 @@
 		4A2608B727C2D8D700B1D86E /* SearchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2608B627C2D8D700B1D86E /* SearchSettings.swift */; };
 		4A2608BC27C55A0300B1D86E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2608BB27C55A0300B1D86E /* SearchViewModel.swift */; };
 		4A2608BE27C5607800B1D86E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2608BD27C5607800B1D86E /* Extensions.swift */; };
+		4A2608C327C5B2A000B1D86E /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2608C227C5B2A000B1D86E /* XCTestCase.swift */; };
+		4A2608C527C5D9F500B1D86E /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2608C427C5D9F500B1D86E /* SearchViewModelTests.swift */; };
+		4A2608C727C5E65400B1D86E /* ScalioAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2608C627C5E65400B1D86E /* ScalioAPITests.swift */; };
 		4A6E444727C00668005BB393 /* ScalioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E444627C00668005BB393 /* ScalioApp.swift */; };
 		4A6E444927C00668005BB393 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E444827C00668005BB393 /* SearchView.swift */; };
 		4A6E444B27C0066A005BB393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6E444A27C0066A005BB393 /* Assets.xcassets */; };
 		4A6E444E27C0066A005BB393 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6E444D27C0066A005BB393 /* Preview Assets.xcassets */; };
-		4A6E445827C0066A005BB393 /* ScalioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E445727C0066A005BB393 /* ScalioTests.swift */; };
-		4A6E446227C0066A005BB393 /* ScalioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E446127C0066A005BB393 /* ScalioUITests.swift */; };
-		4A6E446427C0066A005BB393 /* ScalioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E446327C0066A005BB393 /* ScalioUITestsLaunchTests.swift */; };
+		4A6E445827C0066A005BB393 /* SearchServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E445727C0066A005BB393 /* SearchServicesTests.swift */; };
 		4A6E447927C00BF4005BB393 /* ScalioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447427C00BF4005BB393 /* ScalioAPI.swift */; };
 		4A6E447A27C00BF4005BB393 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447527C00BF4005BB393 /* NetworkConstants.swift */; };
 		4A6E447B27C00BF4005BB393 /* ScalioProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E447627C00BF4005BB393 /* ScalioProvider.swift */; };
@@ -42,13 +43,6 @@
 			remoteGlobalIDString = 4A6E444227C00668005BB393;
 			remoteInfo = Scalio;
 		};
-		4A6E445E27C0066A005BB393 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A6E443B27C00668005BB393 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A6E444227C00668005BB393;
-			remoteInfo = Scalio;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -58,16 +52,16 @@
 		4A2608B627C2D8D700B1D86E /* SearchSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSettings.swift; sourceTree = "<group>"; };
 		4A2608BB27C55A0300B1D86E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		4A2608BD27C5607800B1D86E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4A2608C227C5B2A000B1D86E /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		4A2608C427C5D9F500B1D86E /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		4A2608C627C5E65400B1D86E /* ScalioAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioAPITests.swift; sourceTree = "<group>"; };
 		4A6E444327C00668005BB393 /* Scalio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scalio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6E444627C00668005BB393 /* ScalioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioApp.swift; sourceTree = "<group>"; };
 		4A6E444827C00668005BB393 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4A6E444A27C0066A005BB393 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6E444D27C0066A005BB393 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A6E445327C0066A005BB393 /* ScalioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6E445727C0066A005BB393 /* ScalioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioTests.swift; sourceTree = "<group>"; };
-		4A6E445D27C0066A005BB393 /* ScalioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A6E446127C0066A005BB393 /* ScalioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioUITests.swift; sourceTree = "<group>"; };
-		4A6E446327C0066A005BB393 /* ScalioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A6E445727C0066A005BB393 /* SearchServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServicesTests.swift; sourceTree = "<group>"; };
 		4A6E447427C00BF4005BB393 /* ScalioAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalioAPI.swift; sourceTree = "<group>"; };
 		4A6E447527C00BF4005BB393 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		4A6E447627C00BF4005BB393 /* ScalioProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalioProvider.swift; sourceTree = "<group>"; };
@@ -91,13 +85,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A6E445027C0066A005BB393 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6E445A27C0066A005BB393 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,12 +120,19 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4A2608C127C5B28B00B1D86E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A2608C227C5B2A000B1D86E /* XCTestCase.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4A6E443A27C00668005BB393 = {
 			isa = PBXGroup;
 			children = (
 				4A6E444527C00668005BB393 /* Scalio */,
 				4A6E445627C0066A005BB393 /* ScalioTests */,
-				4A6E446027C0066A005BB393 /* ScalioUITests */,
 				4A6E444427C00668005BB393 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,7 +142,6 @@
 			children = (
 				4A6E444327C00668005BB393 /* Scalio.app */,
 				4A6E445327C0066A005BB393 /* ScalioTests.xctest */,
-				4A6E445D27C0066A005BB393 /* ScalioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,19 +171,13 @@
 		4A6E445627C0066A005BB393 /* ScalioTests */ = {
 			isa = PBXGroup;
 			children = (
+				4A6E445727C0066A005BB393 /* SearchServicesTests.swift */,
+				4A2608C427C5D9F500B1D86E /* SearchViewModelTests.swift */,
+				4A2608C627C5E65400B1D86E /* ScalioAPITests.swift */,
+				4A2608C127C5B28B00B1D86E /* Extensions */,
 				4A6E448127C025C1005BB393 /* Helpers */,
-				4A6E445727C0066A005BB393 /* ScalioTests.swift */,
 			);
 			path = ScalioTests;
-			sourceTree = "<group>";
-		};
-		4A6E446027C0066A005BB393 /* ScalioUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4A6E446127C0066A005BB393 /* ScalioUITests.swift */,
-				4A6E446327C0066A005BB393 /* ScalioUITestsLaunchTests.swift */,
-			);
-			path = ScalioUITests;
 			sourceTree = "<group>";
 		};
 		4A6E447027C009A1005BB393 /* Networking */ = {
@@ -307,24 +294,6 @@
 			productReference = 4A6E445327C0066A005BB393 /* ScalioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4A6E445C27C0066A005BB393 /* ScalioUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4A6E446D27C0066A005BB393 /* Build configuration list for PBXNativeTarget "ScalioUITests" */;
-			buildPhases = (
-				4A6E445927C0066A005BB393 /* Sources */,
-				4A6E445A27C0066A005BB393 /* Frameworks */,
-				4A6E445B27C0066A005BB393 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4A6E445F27C0066A005BB393 /* PBXTargetDependency */,
-			);
-			name = ScalioUITests;
-			productName = ScalioUITests;
-			productReference = 4A6E445D27C0066A005BB393 /* ScalioUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,10 +308,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					4A6E445227C0066A005BB393 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 4A6E444227C00668005BB393;
-					};
-					4A6E445C27C0066A005BB393 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 4A6E444227C00668005BB393;
 					};
@@ -363,7 +328,6 @@
 			targets = (
 				4A6E444227C00668005BB393 /* Scalio */,
 				4A6E445227C0066A005BB393 /* ScalioTests */,
-				4A6E445C27C0066A005BB393 /* ScalioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -379,13 +343,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A6E445127C0066A005BB393 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6E445B27C0066A005BB393 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,17 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6E445827C0066A005BB393 /* ScalioTests.swift in Sources */,
+				4A6E445827C0066A005BB393 /* SearchServicesTests.swift in Sources */,
+				4A2608C327C5B2A000B1D86E /* XCTestCase.swift in Sources */,
+				4A2608C527C5D9F500B1D86E /* SearchViewModelTests.swift in Sources */,
+				4A2608C727C5E65400B1D86E /* ScalioAPITests.swift in Sources */,
 				4A6E448327C025CE005BB393 /* TestConstants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A6E445927C0066A005BB393 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A6E446227C0066A005BB393 /* ScalioUITests.swift in Sources */,
-				4A6E446427C0066A005BB393 /* ScalioUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,11 +397,6 @@
 			isa = PBXTargetDependency;
 			target = 4A6E444227C00668005BB393 /* Scalio */;
 			targetProxy = 4A6E445427C0066A005BB393 /* PBXContainerItemProxy */;
-		};
-		4A6E445F27C0066A005BB393 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4A6E444227C00668005BB393 /* Scalio */;
-			targetProxy = 4A6E445E27C0066A005BB393 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -685,52 +631,6 @@
 			};
 			name = Release;
 		};
-		4A6E446E27C0066A005BB393 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5DW4MH742S;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elgawady14.ScalioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Scalio;
-			};
-			name = Debug;
-		};
-		4A6E446F27C0066A005BB393 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5DW4MH742S;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elgawady14.ScalioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Scalio;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -757,15 +657,6 @@
 			buildConfigurations = (
 				4A6E446B27C0066A005BB393 /* Debug */,
 				4A6E446C27C0066A005BB393 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4A6E446D27C0066A005BB393 /* Build configuration list for PBXNativeTarget "ScalioUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A6E446E27C0066A005BB393 /* Debug */,
-				4A6E446F27C0066A005BB393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

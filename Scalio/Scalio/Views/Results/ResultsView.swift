@@ -17,8 +17,11 @@ struct ResultsView: View {
             VStack(spacing: 20) {
 
                 HStack {
+                    Text("GitHub Users")
+                        .font(.system(.headline))
                     Spacer()
                     Button {
+                        settings.viewModel.clearCache()
                         presentationMode.wrappedValue.dismiss()
                     } label: {
                         Image(systemName: "xmark")
@@ -28,6 +31,8 @@ struct ResultsView: View {
                 }
                 .padding(.top, 20)
                 .padding(.trailing, 30)
+                .padding(.leading, 25)
+
                 if settings.viewModel.isLoadingFirstAPICall == true { ProgressView() }
                 
                 //ScrollView {

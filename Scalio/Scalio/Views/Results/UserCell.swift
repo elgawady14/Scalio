@@ -43,7 +43,6 @@ struct UserCell: View {
             .frame(height: 120)
             .padding([.leading, .trailing], 16)
             .padding(.top, 0)
-            .onAppear { settings.viewModel.checkNextPage() }
         }
     }
 }
